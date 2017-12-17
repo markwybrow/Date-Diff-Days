@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lorica Health - Date Tests</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css" >
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="container">
+        <div class="form-wrapper">
+            <div id="form" class="shadow">
+            <h1> Date Difference in Days</h1>
+            <div id="errMsg" class="inactive"></div>
+                <div class="form-item">
+                    <p class="form-label">Start Date</p>
+                    <input type="text" name="start_date" id="start_date" class="form-style" autocomplete="off" onblur="if(!this.value)this.type='text'" />
+                </div>
+                <div class="form-item">
+                    <p class="form-label">End Date</p>
+                    <input type="text" name="end-date" id="end-date" class="form-style" onblur="if(!this.value)this.type='text'" />
+
+                    <p>
+                        <div id="result" class="inactive"></div>
+                    </p>
+                </div>
+                <div class="form-item">
+                    <button class="submitBtn pull-right" >Check The Amount of Days</button>
+                    <div class="clear-fix"></div>
+                </div>
+            </div>
+
+            <div class="banner darken-bg">
+                <h1> Lorica Health</h1>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript" src="js/bundle.js"></script>   
+<!-- <script type="text/javascript" src="js/DateHandler.js"></script>
+<script type="text/javascript" src="js/FormDisplay.js"></script> -->
+
+
+</body>
+
+</html>

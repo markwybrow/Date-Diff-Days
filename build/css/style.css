@@ -1,0 +1,195 @@
+body {
+    background: #62b6a8 url("../img/Lorica-bg.jpg") 50% 50% no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'HelveticaNeue', 'Arial', sans-serif;
+}
+
+.form-wrapper {
+    background: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .3s ease;
+}
+.banner{
+    width: 100%;
+    height: 110px;
+    margin: auto;
+    padding: auto;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 110px;
+    bottom: 10px;
+    position: absolute;
+}
+
+.darken-bg {
+    background: rgba(0, 0, 0, 0.5) !important;
+    transition: all .3s ease;
+}
+
+input {
+    transition: all .2s ease;
+}
+
+input.form-style {
+    color: #8a8a8a;
+    display: block;
+    width: 90%;
+    height: 44px;
+    padding: 5px 5%;
+    border: 1px solid #ccc;
+    -moz-border-radius: 27px;
+    -webkit-border-radius: 27px;
+    border-radius: 27px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background-color: #fff;
+    font-family: 'HelveticaNeue', 'Arial', sans-serif;
+    font-size: 105%;
+    letter-spacing: .8px;
+
+}
+
+div#form {
+    position: absolute;
+    width: 360px;
+    height: 320px;
+    height: auto;
+    background-color: #fff;
+    margin: auto;
+    border-radius: 5px;
+    padding: 20px;
+    left: 50%;
+    top: 50%;
+    margin-left: -180px;
+    margin-top: -200px;
+}
+div#form h1 {
+    font-size: 140%;
+    color: #58bff6;
+    text-align: center;
+}
+div#result {
+    border: 1px solid #58bff6;
+    border-radius: 40px;
+    color: #58bff6;
+    float: left;
+    font-weight: bold;
+    font-size: 120%;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    transition: all .3s ease;
+    width: 80px;
+}
+div#result span {
+    font-size: 80%;
+}
+div#result span small {
+    line-height: 10%;
+    font-size: 50%;
+    float: right;
+    padding-left: 5px;
+    position: relative;
+    top: -25px;
+    right: 10px;
+}
+
+div#errMsg { 
+    background-color: #FFBABA;
+    border-radius: 15px;
+    border: solid 1px #DBDADA;
+    color: #DB000C;
+    text-align: center;
+    transition: all .3s ease;
+    margin: 6px 0 10px 0;
+    padding:5px 4px;
+    clear: both;
+}
+.active {
+    display: block;
+}
+.inactive {
+    display: none;   
+}
+.shadow {
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.shadow:hover{
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+div.form-item {
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+}
+
+input.form-style:focus {
+    outline: none;
+    border: 1px solid #58bff6;
+    color: #58bff6;
+}
+
+div p.form-label {
+    position: absolute;
+    left: 26px;
+    top: 2px;
+    transition: all .4s ease;
+    color: #bbb;
+}
+
+.form-top {
+    top: -22px !important;
+    left: 26px;
+    background-color: #fff;
+    padding: 0 5px;
+    font-size: 14px;
+    color: #58bff6 !important;
+}
+
+.form-status {
+    color: #8a8a8a !important;
+}
+
+.submitBtn {
+    float: right;
+    width: 220px;
+    height: 37px;
+    -moz-border-radius: 19px;
+    -webkit-border-radius: 19px;
+    border-radius: 19px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background-color: #55b1df;
+    border: 1px solid #55b1df;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.submitBtn:hover {
+    background-color: #fff;
+    border: 1px solid #55b1df;
+    color: #55b1df;
+    cursor: pointer;
+}
+
+.submitBtn:focus {
+    outline: none;
+}
+
+input[type=date]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    display: none;
+}
