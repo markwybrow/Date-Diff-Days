@@ -26,25 +26,7 @@ var DateHandler = function () {
     // run a difference check
     **/
     function DateHandler(dte) {
-        var _this = this;
-
         _classCallCheck(this, DateHandler);
-
-        this.sortDates = function () {
-            var dateOrdered = [];
-            _this.usrDates.forEach(function (d) {
-                var s = parseInt(d.replace(/[.\/, -]/g, ''));
-                dateOrdered.push({
-                    s: s,
-                    d: d
-                });
-            });
-
-            var sorted = dateOrdered.sort(function (a, b) {
-                return a.s - b.s;
-            });
-            _this.dateCollection = [sorted[0].d, sorted[1].d];
-        };
 
         this.usrDates = dte;
 
@@ -56,6 +38,23 @@ var DateHandler = function () {
     }
 
     _createClass(DateHandler, [{
+        key: "sortDates",
+        value: function sortDates() {
+            var dateOrdered = [];
+            this.usrDates.forEach(function (d) {
+                var s = parseInt(d.replace(/[.\/, -]/g, ''));
+                dateOrdered.push({
+                    s: s,
+                    d: d
+                });
+            });
+
+            var sorted = dateOrdered.sort(function (a, b) {
+                return a.s - b.s;
+            });
+            this.dateCollection = [sorted[0].d, sorted[1].d];
+        }
+    }, {
         key: "getDates",
         value: function getDates(dateStr) {
             console.log("getDates: " + dateStr);
@@ -78,7 +77,7 @@ var DateHandler = function () {
     }, {
         key: "daysInYears",
         value: function daysInYears(_year) {
-            var _this2 = this;
+            var _this = this;
 
             // check days between selected years
             var years = [];
@@ -89,7 +88,7 @@ var DateHandler = function () {
                 years.push(i);
             }
             years.forEach(function (lyr) {
-                total_days_in_years += _this2.isLeapYr(lyr);
+                total_days_in_years += _this.isLeapYr(lyr);
             });
             console.log("days eqiv:", total_days_in_years);
             return total_days_in_years;
@@ -201,7 +200,7 @@ sendDates[0].addEventListener('click', function (e) {
             resultEl.classList += ' active';
             resultEl.classList.remove('inactive');
         }
-        resultEl.innerHTML = dte.totalDaysDiffFromDate() + ' <span>days <small>non inc.</small></span>';
+        resultEl.innerHTML = dte.totalDaysDiffFromDate() + ' <span>days&nbsp;<small>&nbsp;&nbsp;non inc.</small></span>';
     }
 });
 

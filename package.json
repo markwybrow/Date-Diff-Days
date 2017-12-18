@@ -1,19 +1,17 @@
 {
     "name": "Lorica",
     "version": "1.0.0",
-    "description": "",
+    "description": "This application is running a basic node server where we are creating a task to find the difference in days between two dates not including the days referenced.",
     "main": "build/main.js",
     "scripts": {
-        "build": "npm run build-client",
-        "assets": "webpack -d --watch --display-max-modules 0",
-        "start-babel": "babel-node server.js --presets es2015",
         "start": "nodemon server.js --presets es2015",
-        "babel-node": "babel-node --presets=/*a*/ --ignore=''",
-        "dev": "npm start",
-        "lint": "eslint source",
+        "build": "npm run build-client",
         "build-client": "browserify app/main.js -t babelify --outfile ./build/js/bundle.js",
         "test": "mocha -u bdd -w -c --compilers js:babel-core/register ./test/**/*.spec.js",
-        "mocha-test": "npm test -- -w"
+        "start-babel": "babel-node server.js --presets es2015",
+        "babel-node": "babel-node --presets=/*a*/ --ignore=''",
+        "dev": "npm start-babel",
+        "lint": "eslint source"
     },
     "babel": {
         "presets": [
@@ -21,10 +19,9 @@
         ]
     },
     "keywords": [],
-    "author": "",
-    "license": "ISC",
+    "author": "Mark Wybrow mark.wybrow<@>outlook.com",
+    "license": "MIT",
     "dependencies": {
-        "axios": "^0.15.3",
         "body-parser": "^1.17.1",
         "cookie-parser": "^1.4.3",
         "dotenv": "^4.0.0",

@@ -19,7 +19,7 @@ export default class DateHandler {
         this.sortDates();
     }
 
-    sortDates = () => {
+    sortDates() {
         let dateOrdered = [];
         this.usrDates.forEach(d => {
             let s = parseInt(d.replace(/[.\/, -]/g, ''));
