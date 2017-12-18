@@ -35,13 +35,6 @@ Mocha / Chai tests can be run by opening a terminal window at the root level of 
 npm run test
 ```
 
-## Technology Stack
-* Angular 4
-* NodeJS 6 with express 4.0 framework using modules request-promise as the transport for crafted requests.
-* Docker
-* Node Class in lib/index.js
-* Failover logic handled in routes/index.js is simulated by altering the Mailgun domain to blah.Mailgun.net (an unreachable sub domain) from api.Mailgun.net
-
 ## Architecture
 * Application port is on 7000 via node express framework.
 * You will require node to install application
