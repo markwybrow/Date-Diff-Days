@@ -30,10 +30,9 @@ formFields.forEach(ff => {
 
 // onSubmit
 let sendDates = document.querySelectorAll('button');
-let c = 0;
+
 sendDates[0].addEventListener('click', (e) => {
     const err = document.getElementById('errMsg');
-    console.log("dates --- click ", c++ )
     if (err.classList.contains('active')) {
         err.classList.remove('active');
         err.classList.add('inactive');
@@ -54,7 +53,6 @@ sendDates[0].addEventListener('click', (e) => {
     })
 
     if (!error) {
-    	console.log("-----",c);
         let dte = new DateHandler(dates);
 
         if (resultEl.classList.contains('inactive')) {
